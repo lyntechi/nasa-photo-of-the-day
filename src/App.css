@@ -1,21 +1,21 @@
+*{
+  font-family: 'Viaoda Libre', cursive;
+}
 .App {
   text-align: center;
 }
 
 img{
-  width: 800px;
+  width: 50%;
   height: 600px;
 
-}
+} 
 .apodContainer{
   display: flex;
   flex-direction: row;
 
 }
-.textSection{
- padding: 40px;
- 
-}
+
 h1{
   margin-bottom: 50px;
 }
