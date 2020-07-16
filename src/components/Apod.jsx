@@ -11,55 +11,52 @@ function Apod(props) {
       opacity: 0.5;
     }
     100% {
-      transform: scale(1) rotate(360deg);
+      transform: scale(1) ;
       opacity: 1;
     }
   `;
 
   const ContainerStyles = styled.div`
     transform: scale(0);
-    animation: ${KFrames} 3s ease-in-out forwards;
+    animation: ${KFrames} 1s ease-in-out forwards;
     opacity: 0;
-    font-size: 1.1rem;
-    letter-spacing: 1.5px;
-    line-height: 35px;
+    // letter-spacing: 1.5px;
+    // line-height: 35px;
     color: whitesmoke;
     display: flex;
-    margin: 60px;
+    justify-content: center;
+    margin: 30px;
     text-align: center;
-    h1 {
-      :hover {
-        color: black;
-        font-weight: bold;
-      }
+    
     }
 
     img {
+      opacity: 0.9;
       ${KFrames};
       margin: 20px;
       border-radius: 40px;
-      border: dashed 4px rgb(137, 137, 226);
-      width: 50%;
-      height: 650px;
+      border: solid 2px pink;
+       width:600px;
+      height: 600px;
     }
 
     p {
       padding: 0 20px;
-      :hover {
-        color: black;
-        font-weight: bold;
-      }
+      font-size: 1rem;
+      
     }
     .text {
-      background: rgba(39, 167, 206, 0.4);
+    
+      background: rgba(257, 100, 106, 0.9);
       border-radius: 40px;
-      border: dashed 4px rgb(137, 137, 226);
-      color: whitesmoke;
-      width: 50%;
-      height: 650px;
+      border: solid 2px pink;
+      color: black;
+      width: 600px;
+       height: 600px;
       margin: 20px;
     }
   `;
+  
 
   return (
     <ContainerStyles>

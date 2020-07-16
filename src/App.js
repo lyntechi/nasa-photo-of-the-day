@@ -6,7 +6,12 @@ import Button from "./components/Button";
 
 function App() {
   const [apod, setApod] = useState([]);
+  const [hideApod, setHideApod]=useState(true);
 
+  const buttonChanger = ()=>{
+    setHideApod(!hideApod)
+  
+  }
   useEffect(() => {
     axios
       .get(
@@ -22,9 +27,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Button apod={apod} setApod={setApod} />
-      <Apod apod={apod} />
+    <div className="App" onClick={buttonChanger}>
+      
+      <Button />
+      {hideApod === true ? null : <Apod apod={apod} /> }
+      
     </div>
   );
 }
