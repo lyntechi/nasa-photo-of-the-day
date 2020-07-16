@@ -1,5 +1,38 @@
+*{
+  font-family: 'Viaoda Libre', cursive;
+
+}
 .App {
   text-align: center;
+  /* margin: 130px 80px; */
+  /* border: 4px rgb(40, 109, 126) dashed; */
+}
+
+body{
+  background-image: url(https://wallup.net/wp-content/uploads/2016/01/71761-space-nebula.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img{
+  width: 50%;
+  height: 600px;
+
+} 
+.apodContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 150px;
+  
+  
+
+}
+
+h1{
+  margin-bottom: 50px;
+  background-color: rgb(134, 104, 139);
+  margin: 0;
+  padding: 35px;
 }
 
 .App-logo {
