@@ -12,28 +12,16 @@ body{
   background-image: url(https://wallup.net/wp-content/uploads/2016/01/71761-space-nebula.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-img{
-  width: 50%;
-  height: 600px;
-
-} 
-.apodContainer{
-  display: flex;
-  flex-direction: row;
-  margin: 150px;
-  
-  
+  /* background: rgba(39, 167, 206, 0.61) */
 
 }
 
-h1{
-  margin-bottom: 50px;
-  background-color: rgb(134, 104, 139);
-  margin: 0;
-  padding: 35px;
+.apodClass{
+  display: none;
 }
+
+
+
 
 .App-logo {
   height: 40vmin;
