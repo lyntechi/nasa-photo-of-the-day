@@ -7,10 +7,12 @@ function Apod(props){
 
     const TextArea = styled.div`
   
-   font-size: 1.2rem;
-    letter-spacing: 2px;
-    background: rgb(20,40,50);
+   font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    background: rgb(100,50,120);
     color: whitesmoke;
+
+    
     `
   
     
