@@ -18,7 +18,7 @@ function Apod(props) {
 
   const ContainerStyles = styled.div`
     transform: scale(0);
-    animation: ${KFrames} 1s ease-in-out forwards;
+    animation: ${KFrames} 0.9s ease-in-out forwards;
     opacity: 0;
     // letter-spacing: 1.5px;
     // line-height: 35px;
@@ -47,7 +47,7 @@ function Apod(props) {
     }
     .text {
     
-      background: rgba(257, 100, 106, 0.9);
+      background: rgba(207, 100, 106, 0.9);
       border-radius: 40px;
       border: solid 2px pink;
       color: black;

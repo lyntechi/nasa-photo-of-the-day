@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=F2C9vXovwBZrguI7dTnEGy4YXpVc1cusi5ulQBht"
+        "https://api.nasa.gov/planetary/apod?api_key=CLQwwZE9xkaQeFtmeyvar03d4TEQbVHThJh6r0mU"
       )
       .then((response) => {
         setApod(response.data);
@@ -29,8 +29,8 @@ function App() {
   return (
     <div className="App" onClick={buttonChanger}>
       
-      <Button />
-      {hideApod === true ? null : <Apod apod={apod} /> }
+      <Button hideApod={hideApod}/>
+      {hideApod === true ? null : <Apod apod={apod}  /> }
       
     </div>
   );
